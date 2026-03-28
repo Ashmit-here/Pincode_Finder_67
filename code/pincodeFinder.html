@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Pincode Finder</title>
+    <link rel="stylesheet" href="pincodeFinder.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>📮 Smart Pincode Finder</h1>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="search-box">
+            <input type="text" id="pincode" placeholder="Enter Pincode">
+            <button onclick="getData()">Search</button>
+        </div>
+
+        
+
+
+
+
+
+
+
+        <div class="controls">
+            <select id="deliveryFilter">
+                <option value="all">All Delivery</option>
+                <option value="Delivery">Delivery</option>
+                <option value="Non-Delivery">Non-Delivery</option>
+            </select>
+
+
+
+
+
+
+
+
+
+            <select id="branchFilter">
+                <option value="all">All Branch</option>
+                <option value="Head Post Office">Head Post Office</option>
+                <option value="Sub Post Office">Sub Post Office</option>
+            </select>
+
+
+
+
+
+
+
+
+            <button onclick="applyFilters()">Filter</button>
+            <button onclick="sortByName()">Sort A-Z</button>
+        </div>
+
+        
+        
+
+
+
+
+
+
+        <div id="loader" class="hidden">Loading...</div>
+
+        
+
+
+
+
+
+
+
+        <div id="results"></div>
+
+    </div>
+
+
+    <script src="pincodeFinder.js"></script>
+</body>
+</html>
